@@ -1,0 +1,23 @@
+.wrap {
+  aspect-ratio: 0.75;
+  --c: no-repeat linear-gradient(var(--primary) 0 0);
+  background: var(--c) 0% 100%, var(--c) 33.33% 100%, var(--c) 66.66% 100%,
+    var(--c) 100% 100%;
+  background-size: 14.28% 65%;
+  animation: animate .9s infinite linear;
+}
+@keyframes animate {
+
+  20% {
+    background-size: 14.28% 66.66%, 14.28% 100%, 14.28% 0%, 14.28% 33.33%;
+  }
+  40% {
+    background-size: 14.28% 100%, 14.28% 0%, 14.28% 33.33%, 14.28% 66.66%;
+  }
+  60% {
+    background-size: 14.28% 0%, 14.28% 33.33%, 14.28% 66.66%, 14.28% 100%;
+  }
+  80% {
+    background-size: 14.28% 33.33%, 14.28% 66.66%, 14.28% 100%, 14.28% 0%;
+  }
+}

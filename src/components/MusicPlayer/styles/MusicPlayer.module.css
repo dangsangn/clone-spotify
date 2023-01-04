@@ -1,0 +1,24 @@
+.active {
+  color: var(--primary);
+  position: relative;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
+  .animationPlay {
+    animation-play-state: running;
+  }
+
+  .animationPause {
+    animation-play-state: paused;
+  }
